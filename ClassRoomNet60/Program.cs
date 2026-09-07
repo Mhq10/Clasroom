@@ -17,3 +17,5 @@ foreach (var student in classRoom.Students)
 {
     Console.WriteLine($"{student.Name} - Birthday: {student.Birthday}/{student.BirthMonth}");
 }
+
+classRoom.CountBirthdaysBySeason();

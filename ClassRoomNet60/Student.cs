@@ -9,6 +9,9 @@
 
     public Student(string name, int birthMonth, int birthday)
     {
+        if (birthMonth < 1 || birthMonth > 12)
+            throw new ArgumentException("Birth month must be between 1 and 12");
+
         Name = name;
         BirthMonth = birthMonth;
         Birthday = birthday;
